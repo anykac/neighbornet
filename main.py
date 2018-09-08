@@ -84,7 +84,49 @@ class home(webapp2.RequestHandler):
 
         self.response.write(template.render(templateVars))
 
+class createaccount(webapp2.RequestHandler):
+    def get(self):
+
+        template = env.get_template("templates/createaccount.html")
+        templateVars = { #this is a dictionary
+        }
+
+        self.response.write(template.render(templateVars))
+
+class chooseneighborhood(webapp2.RequestHandler):
+    def get(self):
+
+        template = env.get_template("templates/chooseneighborhood.html")
+        templateVars = { #this is a dictionary
+        }
+
+        self.response.write(template.render(templateVars))
+
+class createneighborhood(webapp2.RequestHandler):
+    def get(self):
+
+        template = env.get_template("templates/createneighborhood.html")
+        templateVars = { #this is a dictionary
+        }
+
+        self.response.write(template.render(templateVars))
+
+class profile(webapp2.RequestHandler):
+    def get(self):
+
+        template = env.get_template("templates/profile.html")
+        templateVars = { #this is a dictionary
+        }
+
+        self.response.write(template.render(templateVars))
+
+
 app = webapp2.WSGIApplication([
     ("/", home),
     ("/welcome", welcome),
+    ("/createaccount", createaccount),
+    ("/chooseneighborhood", chooseneighborhood),
+    ("/createneighborhood", createneighborhood),
+    ("/profile", profile),
+    ("/adminconsole", adminconsle),
 ], debug=True)
