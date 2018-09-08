@@ -22,3 +22,23 @@ Deep Blue - 004E98
   line-height: 10px;
   font-size: 15px;
 }
+
+.webtitle {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  padding-left: 10px;
+  font-size: 40px;
+  line-height: 25px;
+  display: flex;
+}
+
+.webtitle:hover {
+  cursor: pointer;
+}
+
+.logo {
+  padding: 10px;
+  padding-top: 20px;
+  padding-right: 20px;
+  height: 70px;
+}
