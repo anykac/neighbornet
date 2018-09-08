@@ -5,40 +5,75 @@ Light Gray - EBEBEB
 Gray - C0C0C0
 Medium Gray Blue - 3A6EA5
 Deep Blue - 004E98
+
+font-family: 'Muli', sans-serif; //THIS IS THE HEADING FONT
+font-family: 'Lato', sans-serif; //THIS IS THE CONTENT FONT
 */
 
 .heading {
-  height: 150px;
-  background-color: green;
+  height: 110px;
+  background-color: #004E98;
 }
 
 .topbarbuttons {
-  height: 140px;
+  margin-top: 80px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
   padding-right: 20px;
-  padding-top: 5px;
-  text-align: right;
+  padding-bottom: 10px;
+  text-align: center;
   float: right;
-  background-color: orange;
+  background-color: #EBEBEB;
   line-height: 10px;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.topbarbuttons:hover {
+  cursor: pointer;
+  background-color: #C0C0C0;
 }
 
 .webtitle {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Muli', sans-serif;
   float: left;
   padding-left: 10px;
-  font-size: 40px;
-  line-height: 25px;
+  font-size: 45px;
+  line-height: 20px;
   display: flex;
+  color: #EBEBEB;
 }
 
 .webtitle:hover {
   cursor: pointer;
 }
 
-.logo {
+.welcomeimg {
+  position: relative;
+}
+
+.loginbutton {
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  width: 10%;
   padding: 10px;
-  padding-top: 20px;
-  padding-right: 20px;
-  height: 70px;
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  background-color: #3A6EA5;
+  text-align: center;
+}
+
+.loginbutton:hover {
+  cursor: pointer;
+  background-color: #969696;
+
+}
+
+.logo {
+  padding: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
+  height: 90px;
 }

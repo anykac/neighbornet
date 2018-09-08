@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <title>Welcome to NeighborNet</title>
 <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Lato|Muli" rel="stylesheet">
 
 <div class="heading">
   <div class="webtitle" onclick="location.href='/welcome'">
@@ -8,21 +9,17 @@
     <p>NeighborNet</p>
   </div>
   <div class="topbarbuttons">
-    <a href="#about">
-      <div class="barbutton">About
-      </div>
-    </a>
+    <div class="barbutton" onclick="location.href='#about'">about
+    </div>
   </div>
 </div>
 
 <div class="pagebody">
   <div class="welcomeimg">
-    <img src="../photos/welcomeimg.jpg" width="100%">
-    <a href="{{login_url}}"
-      <div class="loginbutton">
-        Log In
-      </div>
-    </a>
+    <img src="../photos/welcomeimg.png" width="100%">
+    <div class="loginbutton" onclick="location.href='{{login_url}}'">
+      Log In
+    </div>
   </div>
   <div id="about">
     NeighborNet is a platform on which people in their neighborhood
